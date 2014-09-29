@@ -2,6 +2,8 @@ require "timelapsify/rmagick_screenshot_capturer"
 
 module Timelapsify
 	class ScreenshotCapturer
+		attr_reader :utility
+
 		def initialize(utility = :rmagick)
 			case utility
 			when :rmagick
