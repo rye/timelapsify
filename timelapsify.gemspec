@@ -17,4 +17,5 @@ Gem::Specification.new do |s|
 	          File.join(%w_bin timelapsify_)
 
 	s.executables << "timelapsify"
+	s.add_runtime_dependency("rmagick", ["~>2.13"])
 end
