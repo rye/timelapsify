@@ -40,10 +40,10 @@ module Timelapsify
 
 			# Grab the predetermined number of screenshots.
 			(start_number..end_number).each do |n|
-
 				# Capture screenshots using the capturing_agent
 				capturing_agent.utility.capture_to_file("#{n}.png")
 
+				# Sleep a bit.
 				sleep interval
 			end
 		end
