@@ -15,7 +15,7 @@ module Timelapsify
 			Magick::Image.capture(options[:silent], options[:frame], options[:descend], options[:screen], options[:borders], &options[:optional_arguments])
 		end
 
-		def self.capture_to_file(filename = "#{DateTime.now.strftime("%Y-%m-%dT%H:%M:%S%:z")}.png", options = {})
+		def self.capture_to_file(filename = "unknown.png", options = {})
 			self.capture(options).write(filename)
 		end
 	end
