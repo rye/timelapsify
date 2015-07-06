@@ -29,3 +29,9 @@ due to your personal setup, though you're welcome to open an Issue about it.
 Timelapsify uses RMagick and a variety of other programs to capture
 screenshots.  These screenshots are then stitched together to create a video
 file.
+
+## Contributing
+
+Support for other screenshot capturing programs and other such things would be
+greatly appreciated as a pull request.  If you have an idea, feel free to fork
+this repository and add support for other systems.
