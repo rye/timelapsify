@@ -23,3 +23,5 @@ $ gem install --local timelapsify-*.gem
 
 If you happen to encounter any problems with the installation, they're likely
 due to your personal setup, though you're welcome to open an Issue about it.
+
+## Internals
