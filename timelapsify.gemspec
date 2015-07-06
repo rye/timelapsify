@@ -14,7 +14,11 @@ Gem::Specification.new do |s|
 	s.author = "Kristofer Rye"
 	s.homepage = "https://github.com/rye/timelapsify"
 	s.files = Dir.glob(File.join(%w[lib ** *.rb])) <<
-		File.join(%w[bin timelapsify]) + %w[README.md Gemfile Gemfile.lock]
+		File.join(%w[bin timelapsify])
+
+	%w[README.md Gemfile Gemfile.lock].each do |file|
+		s.files << file
+	end
 
 	s.executables << "timelapsify"
 
