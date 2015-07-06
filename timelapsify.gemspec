@@ -13,8 +13,8 @@ Gem::Specification.new do |s|
 
 	s.author = "Kristofer Rye"
 	s.homepage = "https://github.com/krye/timelapsify"
-	s.files = Dir.glob(File.join(%w_lib ** *.rb_)) <<
-	          File.join(%w_bin timelapsify_)
+	s.files = Dir.glob(File.join(%w[lib ** *.rb])) <<
+	          File.join(%w[bin timelapsify])
 
 	s.executables << "timelapsify"
 	s.add_runtime_dependency("rmagick", ["~>2.13"])
