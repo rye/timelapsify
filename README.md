@@ -1,3 +1,3 @@
 # timelapsify
 
-A tiny Ruby script for making timelapses.
+A Ruby Gem for taking and making timelapses.
