@@ -25,3 +25,7 @@ If you happen to encounter any problems with the installation, they're likely
 due to your personal setup, though you're welcome to open an Issue about it.
 
 ## Internals
+
+Timelapsify uses RMagick and a variety of other programs to capture
+screenshots.  These screenshots are then stitched together to create a video
+file.
