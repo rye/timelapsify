@@ -1,0 +1,16 @@
+PATH
+  remote: .
+  specs:
+    timelapsify (0.1.0)
+      rmagick (~> 2)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rmagick (2.15.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  timelapsify!
