@@ -12,9 +12,10 @@ Gem::Specification.new do |s|
 	s.description = "A tool for creating timelapses by generating screenshots using common utilities like scrot."
 
 	s.author = "Kristofer Rye"
-	s.homepage = "https://github.com/krye/timelapsify"
+	s.homepage = "https://github.com/rye/timelapsify"
 	s.files = Dir.glob(File.join(%w[lib ** *.rb])) <<
-	          File.join(%w[bin timelapsify])
+		File.join(%w[bin timelapsify]) <<
+		%w[README.md Gemfile Gemfile.lock]
 
 	s.executables << "timelapsify"
 
