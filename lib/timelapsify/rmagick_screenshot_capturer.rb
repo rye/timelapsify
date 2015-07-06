@@ -1,5 +1,5 @@
 require "date"
-require "RMagick"
+require "rmagick"
 
 module Timelapsify
 	class RMagickScreenshotCapturer
