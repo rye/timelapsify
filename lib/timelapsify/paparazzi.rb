@@ -1,6 +1,7 @@
 require 'timelapsify/screenshot_capturer'
 
 module Timelapsify
+
 	class Paparazzi
 		def self.capture(number, interval = 1.0)
 			capturing_agent = Timelapsify::ScreenshotCapturer.new
@@ -48,4 +49,5 @@ module Timelapsify
 			end
 		end
 	end
+
 end

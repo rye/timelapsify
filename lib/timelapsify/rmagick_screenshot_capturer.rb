@@ -2,6 +2,7 @@ require 'date'
 require 'rmagick'
 
 module Timelapsify
+
 	class RMagickScreenshotCapturer
 		def self.capture(options = {})
 			options[:silent] = !options[:silent].nil? ? options[:silent] : true
@@ -19,4 +20,5 @@ module Timelapsify
 			self.capture(options).write(filename)
 		end
 	end
+
 end
