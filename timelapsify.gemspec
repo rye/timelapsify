@@ -27,5 +27,12 @@ Gem::Specification.new do |s|
 
 	s.executables << 'timelapsify'
 
-	s.add_runtime_dependency('rmagick', ['~> 2'])
+	s.add_dependency('pry', ['~> 0.10'])
+	s.add_dependency('rmagick', ['~> 2'])
+
+	s.add_development_dependency('pry-doc', ['~> 0.8'])
+	s.add_development_dependency('rake', ['~> 11.1'])
+	s.add_development_dependency('rspec', ['~> 3.4'])
+	s.add_development_dependency('guard', ['~> 2.13'])
+	s.add_development_dependency('guard-rspec', ['~> 4.6'])
 end
