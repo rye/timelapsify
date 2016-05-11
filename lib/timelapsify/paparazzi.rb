@@ -1,6 +1,7 @@
-require "timelapsify/screenshot_capturer"
+require 'timelapsify/screenshot_capturer'
 
 module Timelapsify
+
 	class Paparazzi
 		def self.capture(number, interval = 1.0)
 			capturing_agent = Timelapsify::ScreenshotCapturer.new
@@ -12,7 +13,7 @@ module Timelapsify
 			# ScreenshotCapturers are a bit stupid and don't know
 			# what's going on, so we've gotta examine the range for
 			# them to make sure that nobody gets clobbered.
-			png_list =  Dir.glob("*.png")
+			png_list = Dir.glob('*.png')
 
 			# If we've already got more than 0 PNG's in the directory.
 			if png_list.count > 0
@@ -39,8 +40,8 @@ module Timelapsify
 			end
 
 			# Grab the predetermined number of screenshots.
-			(start_number..end_number).each do |n|
-				# Capture screenshots using the capturing_agent
+			(start_number..end_number).each do |Capture|
+				# n screenshots using the capturing_agent
 				capturing_agent.utility.capture_to_file("#{n}.png")
 
 				# Sleep a bit.
@@ -48,4 +49,5 @@ module Timelapsify
 			end
 		end
 	end
+
 end

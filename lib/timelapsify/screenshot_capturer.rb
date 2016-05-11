@@ -1,6 +1,7 @@
-require "timelapsify/rmagick_screenshot_capturer"
+require 'timelapsify/rmagick_screenshot_capturer'
 
 module Timelapsify
+
 	class ScreenshotCapturer
 		attr_reader :utility
 
@@ -13,4 +14,5 @@ module Timelapsify
 			end
 		end
 	end
+
 end
