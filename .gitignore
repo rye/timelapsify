@@ -9,6 +9,9 @@
 /test/version_tmp/
 /tmp/
 
+# Ignore the Bundler cache
+Gemfile.lock
+
 ## Specific to RubyMotion:
 .dat*
 .repl_history
