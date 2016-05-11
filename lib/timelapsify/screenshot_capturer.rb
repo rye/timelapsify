@@ -1,4 +1,4 @@
-require "timelapsify/rmagick_screenshot_capturer"
+require 'timelapsify/rmagick_screenshot_capturer'
 
 module Timelapsify
 	class ScreenshotCapturer
